@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="stylesheet" href="index.css">
+
+	<title>Apple (España)</title>
+</head>
+<body>
+	<header>
+		<nav class="navHeader">
+			<div class="containerList">
+
+				<ul class="navList" id="navList">
+					<li id="navMenu">
+
+						<div class="wrapperLeftMenu" onclick="displayAppleMenu()">    
+  							<div class="leftMenuClosed" id="leftMenu"></div>
+  						</div>
+
+  						<div class="search" id="search">
+							<div class="search-wrapper">
+								<form class="search-form" action="#" method="post">
+									<div class="search-input-wrapper" id="search-input-wrapper">
+										<div class="search-input-submit">
+											<span class="icon-search"></span>
+										</div>
+										<input class="search-input" id="search-input" type="search" placeholder="Buscar en apple.com" onclick="displaySearchMenu()">
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="cancelSM" id="cancelSM" onclick="displaySearchMenuCancel()">
+							<p>Cancelar</p>
+						</div>
+
+						<ul class="searchMenu" id="searchMenu">
+							<li class="elementSearchMenu" id="tittleSM">
+								<div>
+									<p>ENLACES RÁPIDOS</p>
+								</div>
+							</li>
+
+							<li class="elementSearchMenu" id="questionsSM">
+								<a href="#"><p>Preguntas frecuentes sobre visitas ...</p><p id="textResponsive375">al Apple</p><p id="textResponsive425"> Store</p></a>
+							</li>
+
+							<li class="elementSearchMenu" id="onlineBuySM">
+								<a href="#">Compra online en el Apple Store</a>
+							</li>
+
+							<li class="elementSearchMenu" id="accesoriesSM">
+								<a href="#">Accesorios</a>
+							</li>
+
+							<li class="elementSearchMenu" id="airPodsSM">
+								<a href="#">AirPods</a>
+							</li>
+
+							<li class="elementSearchMenu" id="airTagSM">
+								<a href="#">AirTag</a>
+							</li>
+
+						</ul>
+
+						<ul class="appleMenu" id="appleMenu">
+
+							<li class="elementAppleMenu" id="shop">
+								<a href="#">Tienda</a>
+							</li>
+
+							<li class="elementAppleMenu" id="mac">
+								<a href="#">Mac</a>
+							</li>
+
+							<li class="elementAppleMenu" id="iPad">
+								<a href="#">iPad</a>
+							</li>
+
+							<li class="elementAppleMenu" id="iPhone">
+								<a href="#">iPhone</a>
+							</li>
+
+							<li class="elementAppleMenu" id="watch">
+								<a href="#">Watch</a>
+							</li>
+
+							<li class="elementAppleMenu" id="airPods">
+								<a href="#">AirPods</a>
+							</li>
+
+							<li class="elementAppleMenu" id="tvHome">
+								<a href="#">TV y Casa</a>
+							</li>
+
+							<li class="elementAppleMenu" id="onlyApple">
+								<a href="#">Solo en Apple</a>
+							</li>
+
+							<li class="elementAppleMenu" id="accesories">
+								<a href="#">Accesorios</a>
+							</li>
+
+							<li class="elementAppleMenu" id="support">
+								<a href="#">Soporte</a>
+							</li>
+
+						</ul>
+					</li>
+
+					<li id="navIcon">
+						<a href="index.html" id="linkApple">
+							<span class="icon-appleinc"></span>
+						</a>
+					</li>
+
+					<li id="navBag" id="navBag">
+						
+						<figure id="iconBagMenu" onclick="displayListBag()">
+							<span class="icon-shopping-bag"></span>
+						</figure>
+
+						<ul class="listBag" id="listBag">
+
+							<div id="triangle"></div>
+
+							<div id="stateBag">
+								<p>Tu bolsa está vacía.</p>
+							</div>
+
+							<li class="elementListBag" id="bag">
+								<a href="shop/bag.html" id="linkBag">
+									<span class="icon-shopping-bag"></span>
+									<p>Bolsa</p>
+								</a>
+							</li>
+
+							<li class="elementListBag" id="savedItems">
+								<a href="shop/saveditems.html" id="linkSavedItems">
+									<span class="icon-bookmark"></span>
+									<p>Artículos guardados</p>
+								</a>
+							</li>
+
+							<li class="elementListBag" id="orders">
+								<a href="shop/order/list.html" id="linkOrders">
+									<span class="icon-package"></span>
+									<p>Pedidos</p>
+								</a>
+							</li>
+
+							<li class="elementListBag" id="account">
+								<a href="shop/account/home.html" id="linkAccount">
+									<span class="icon-cog"></span>
+									<p>Cuenta</p>
+								</a>
+							</li>
+
+							<li class="elementListBag" id="singIn">
+								<a href="shop/singin.html" id="linkSingIn">
+									<span class="icon-user-solid-circle"></span>
+									<p>Iniciar Sesión</p>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+	<section id="section1">
+		<div id="unicef">
+			<figure id="unicefImg">
+				<img src="img\unicefLogo.png" alt="unicefLogo"/>
+			</figure>
+			<div id="unicefText">
+				<a href="https://www.unicef.es/">Ayuda a las familias afectadas por la guerra de Ucrania<span class="icon-arrow-up-right"></span></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section2">
+		<div class="sectionDivBG" id="macBookProBG">
+			<figure class="sectionImg" id="macBookProImg">
+				<img src="img\macBookPro13.jpg" alt="macBookPro13">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="macBookProTittle">
+					<h1 class="sectionH1" id="macBookProH1">MacBook Pro de 13"</h1>
+				</div>
+
+				<div class="sectionSubtittle" id="macBookProSubtittle">
+					<p class="sectionSubtittleP" id="macBookProSubtittleP">Superpotenciado con</p>
+					<figure>
+						<img src="img\appleM2.png" alt="appleM2"/>
+					</figure>
+				</div>
+
+				<div class="sectionLinks" id="macBookProLinks">
+					<div class="sectionLink1" id="macBookProLink1">
+						<p id="macBookProLink1P">
+							<a href="macbook-pro-13.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="macBookProLink2">
+						<p id="macBookProLink2P">
+							<a href="shop/goto/buy_mac/macbook_pro_13.html">Comprar ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="macbook-pro-13.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section3">
+		<div class="sectionDivBG" id="macBookAirBG">
+			<figure class="sectionImg" id="macBookAirImg">
+				<img src="img\macBookAir.jpg" alt="macBookAir13">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="macBookAirTittle">
+					<h1 class="sectionH1" id="macBookAirH1">MacBook Air</h1>
+				</div>
+
+				<div class="sectionSubtittle" id="macBookAirSubtittle">
+					<p class="sectionSubtittleP" id="macBookAirSubtittleP">Superpotenciado con</p>
+					<figure>
+						<img src="img\appleM2.png" alt="appleM2"/>
+					</figure>
+				</div>
+
+				<div id="macBookAirSubtittle2">
+					<p id="macBookAirSubtittle2P">Disponible en julio</p>
+				</div>
+
+				<div class="sectionLinks" id="macBookAirLinks">
+					<div class="sectionLink1" id="macBookAirLink1">
+						<p id="macBookAirLink1P">
+							<a href="macbook-air-m2.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="macBookAirLink2">
+						<p id="macBookAirLink2P">
+							<a href="shop/goto/buy_mac/macbook_air_m2.html">Ver precios ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="macbook-air-m2.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section4">
+		<div class="sectionDivBG" id="iPhone13BG">
+			<figure class="sectionImg" id="iPhone13Img">
+				<img src="img\iPhone13.jpg" alt="iPhone13">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="iPhone13Tittle">
+					<h1 class="sectionH1" id="iPhone13H1">iPhone 13</h1>
+				</div>
+
+				<div class="sectionSubtittle" id="iPhone13Subtittle">
+					<p class="sectionSubtittleP" id="iPhone13SubtittleP">Tu nuevo superpoder.</p>
+				</div>
+
+				<div class="sectionLinks" id="iPhone13Links">
+					<div class="sectionLink1" id="iPhone13Link1">
+						<p id="iPhone13Link1P">
+							<a href="iphone-13.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="iPhone13Link2">
+						<p id="iPhone13Link2P">
+							<a href="shop/goto/buy_iphone/iphone_13.html">Comprar ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="iphone-13.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section5">
+		<div class="sectionDivBG" id="iPhone13ProBG">
+			<figure class="sectionImg" id="iPhone13ProImg">
+				<img src="img\iPhone13Pro.jpg" alt="iPhone13Pro">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="iPhone13ProTittle">
+					<h1 class="sectionH1" id="iPhone13ProH1">iPhone 13 Pro</h1>
+				</div>
+
+				<div class="sectionSubtittle" id="iPhone13ProSubtittle">
+					<p class="sectionSubtittleP" id="iPhone13ProSubtittleP">Prodigioso Pro.</p>
+				</div>
+
+				<div class="sectionLinks" id="iPhone13ProLinks">
+					<div class="sectionLink1" id="iPhone13ProLink1">
+						<p id="iPhone13ProLink1P">
+							<a href="iphone-13-pro.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="iPhone13ProLink2">
+						<p id="iPhone13ProLink2P">
+							<a href="shop/goto/buy_iphone/iphone_13_pro.html">Comprar ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="iphone-13-pro.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section6">
+		<div class="sectionDivBG" id="appleWatchSeries7BG">
+			<figure class="sectionImg" id="appleWatchSeries7Img">
+				<img src="img\appleWatchSeries7.jpg" alt="appleWatchSeries7">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="appleWatchSeries7Tittle">
+					<span id="appleIcon" class="icon-appleinc"></span>
+					<h1 class="sectionH1" id="appleWatchSeries7H1">WATCH</h1>
+				</div>
+
+				<div id="appleWatchSeries7SmallTittle">
+					<p id="appleWatchSeries7SmallTittleP">SERIES 7</p>
+				</div>
+
+				<div class="sectionSubtittle" id="appleWatchSeries7Subtittle">
+					<p class="sectionSubtittleP" id="appleWatchSeries7SubtittleP">Nuestra pantalla más grande hasta la fecha.</p>
+				</div>
+
+				<div class="sectionLinks" id="appleWatchSeries7Links">
+					<div class="sectionLink1" id="appleWatchSeries7Link1">
+						<p id="appleWatchSeries7Link1P">
+							<a href="apple-watch-series-7.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="appleWatchSeries7Link2">
+						<p id="appleWatchSeries7Link2P">
+							<a href="shop/goto/buy_watch/apple_watch_series_7.html">Comprar ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="apple-watch-series-7.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section7">
+		<div class="sectionDivBG" id="iPadAirBG">
+			<figure class="sectionImg" id="iPadAirImg">
+				<img src="img\iPadAir.jpg" alt="iPadAir">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="iPadAirTittle">
+					<h1 class="sectionH1" id="iPadAirH1">iPad</h1>
+					<p id="iPadAirH1P">air</p>
+				</div>
+
+				<div class="sectionSubtittle" id="iPadAirSubtittle">
+					<p class="sectionSubtittleP" id="iPadAirSubtittleP">Un rayo de luz y de color.</p>
+				</div>
+
+				<div class="sectionLinks" id="iPadAirLinks">
+					<div class="sectionLink1" id="iPadAirLink1">
+						<p id="iPadAirLink1P">
+							<a href="ipad-air.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="iPadAirLink2">
+						<p id="iPadAirLink2P">
+							<a href="shop/goto/buy_ipad/ipad_air.html">Comprar ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="ipad-air.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section8">
+		<div class="sectionDivBG" id="fitnessPlusBG">
+			<figure class="sectionImg" id="fitnessPlusImg">
+				<img src="img\fitnessPlus.jpg" alt="fitnessPlus">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="fitnessPlusTittle">
+					<span id="appleIcon" class="icon-appleinc"></span>
+					<h1 class="sectionH1" id="fitnessPlusH1">Fitness+</h1>
+				</div>
+
+				<div class="sectionSubtittle" id="fitnessPlusSubtittle">
+					<p class="sectionSubtittleP" id="fitnessPlusSubtittleP">Llévate tres meses gratis al comprar un Apple Watch.</p>
+				</div>
+
+				<div class="sectionLinks" id="fitnessPlusLinks">
+					<div class="sectionLink1" id="fitnessPlusLink1">
+						<p id="fitnessPlusLink1P">
+							<a href="apple-fitness-plus.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="fitnessPlusLink2">
+						<p id="fitnessPlusLink2P">
+							<a href="shop/goto/buy_watch/apple_watch_series_7.html">Comprar un Apple Watch ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="apple-fitness-plus.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section9">
+		<div class="sectionDivBG" id="giftCardBG">
+			<figure class="sectionImg" id="giftCardImg">
+				<img src="img\giftCard.jpg" alt="giftCard">
+			</figure>
+
+			<div class="sectionContainer">
+				<div class="sectionTittle" id="giftCardTittle">
+					<span id="appleIcon" class="icon-appleinc"></span>
+					<h1 class="sectionH1" id="giftCardH1">Gift Card</h1>
+				</div>
+
+				<div class="sectionSubtittle" id="giftCardSubtittle">
+					<p class="sectionSubtittleP" id="giftCardSubtittleP">De todo. Para todos los gustos.</p>
+				</div>
+
+				<div class="sectionLinks" id="giftCardLinks">
+					<div class="sectionLink1" id="giftCardLink1">
+						<p id="giftCardLink1P">
+							<a href="shop/goto/giftcards.html">Más información ></a>
+						</p>
+					</div>
+
+					<div class="sectionLink1" id="giftCardLink2">
+						<p id="giftCardLink2P">
+							<a href="shop/goto/giftcards.html">Comprar ></a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="shop/goto/giftcards.html"></a>
+		</div>
+	</section>
+
+	<section class="bodySections" id="section10">
+		<div class="sectionDivBG" id="appleTVBG">
+			<figure class="sectionImg" id="appleTVImg">
+				<img src="img\appleTV1.jpg" alt="appleTV">
+			</figure>
+
+			<div class="sectionContainer">
+				
+				<div class="sectionSubtittle" id="appleTVSubtittle">
+					<p class="sectionSubtittleP" id="appleTVSubtittleP">Su fortuna está a punto de cambiar.</p>
+				</div>
+
+				<div class="sectionLinks" id="appleTVLinks">
+					<div class="sectionLink1" id="appleTVLink1">
+						<p id="appleTVLink1P">
+							<a href="https://tv.apple.com/es/show/umc.cmc.5erbujil1mpazuerhr1udnk45?itscg=10000&itsct=atv-apl_hp-pmo_wch-LOOT-220625&l=es">Ver ahora</a>
+							<span class="icon-play3" id="iconPlay"></span>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<a id="linkAbove" href="https://tv.apple.com/es/show/umc.cmc.5erbujil1mpazuerhr1udnk45?itscg=10000&itsct=atv-apl_hp-pmo_wch-LOOT-220625&l=es"></a>
+		</div>
+	</section>
+
+
+
+
+
+	<footer>
+		<div id="containerFooterTop">
+			<div class="textFooter">
+				<p>
+					1. 9,99 €/mes después de la prueba gratuita. Solo una oferta por ID de Apple y por grupo de En Familia, independientemente del número de dispositivos comprados. La oferta tiene validez durante tres meses desde que se activa un dispositivo válido. Si no se cancela, la suscripción se renueva automáticamente. Sujeto a restricciones y otras condiciones.
+				</p>
+			</div>
+			<div class="textFooter">
+				<p>
+					Apple TV+ por 4,99 €/mes después de la prueba gratuita. Solo una oferta por ID de Apple y por grupo de En Familia, independientemente del número de dispositivos comprados. Esta oferta no está disponible si tu familia o tú habéis aceptado anteriormente la oferta de un año gratis de Apple TV+. La oferta tiene validez durante tres meses desde que se activa un dispositivo válido. Si no se cancela, la suscripción se renueva automáticamente. Sujeto a restricciones y otras condiciones.
+				</p>
+			</div>
+			<div class="textFooter">
+				<p>
+					Apple Fitness+ requiere suscripción.
+				</p>
+			</div>
+			<div class="textFooter">
+				<p>
+					Apple Fitness+ requiere iOS 14.3 o posterior, iPadOS 14.3 o posterior, watchOS 7.2 o posterior, o tvOS 14.3 o posterior.
+				</p>
+			</div>
+			<div class="textFooter">
+				<p>
+					Para acceder a las prestaciones más recientes, asegúrate de que tus dispositivos tienen instalada la última versión del software.
+				</p>
+			</div>
+			<div class="textFooter">
+				<p>
+					Los entrenamientos y las meditaciones guiadas de Apple Fitness+ se imparten en inglés con subtítulos opcionales en alemán, español de Latinoamérica, francés, italiano, portugués de Brasil y ruso.
+				</p>
+			</div>
+		</div>
+
+		<div id="containerFooterMiddle">
+			<ul class="optionsFooter">
+				<li class="typeOptionFooter" onclick="displayFooterMenu1()">
+					<div class="typeOptionTittle">
+						<p>Ver y comprar</p><p>+</p>
+					</div>
+					
+					<ul id="showBuyUl">
+						<li><a href="">Tienda</a></li>
+						<li><a href="">Mac</a></li>
+						<li><a href="">iPad</a></li>
+						<li><a href="">iPhone</a></li>
+						<li><a href="">Watch</a></li>
+						<li><a href="">AirPods</a></li>
+						<li><a href="">TV y Casa</a></li>
+						<li><a href="">AirTag</a></li>
+						<li><a href="">Accesorios</a></li>
+						<li><a href="">Tarjetas regalo</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu2()">
+					<div class="typeOptionTittle">
+						<p>Servicios</p><p>+</p>
+					</div>
+
+					<ul id="servicesUl">
+						<li><a href="">Apple Music</a></li>
+						<li><a href="">Apple TV+</a></li>
+						<li><a href="">Apple Fitness+</a></li>
+						<li><a href="">Apple Arcade</a></li>
+						<li><a href="">iCloud</a></li>
+						<li><a href="">Apple One</a></li>
+						<li><a href="">Apple Pay</a></li>
+						<li><a href="">Apple Books</a></li>
+						<li><a href="">Apple Podcasts</a></li>
+						<li><a href="">App Store</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu3()">
+					<div class="typeOptionTittle">
+						<p>Cuentas</p><p>+</p>
+					</div>
+
+					<ul id="accountUl">
+						<li><a href="">Gestionar ID de Apple</a></li>
+						<li><a href="">Cuenta del Apple Store</a></li>
+						<li><a href="">iCloud.com</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu4()">
+					<div class="typeOptionTittle">
+						<p>Apple Store</p><p>+</p>
+					</div>
+
+					<ul id="appleStoreUl">
+						<li><a href="">Encontrar una tienda</a></li>
+						<li><a href="">Genius Bar</a></li>
+						<li><a href="">Today at Apple</a></li>
+						<li><a href="">Campamento de Apple</a></li>
+						<li><a href="">App Apple Store</a></li>
+						<li><a href="">Reacondicionado</a></li>
+						<li><a href="">Financiación</a></li>
+						<li><a href="">Apple Trade In</a></li>
+						<li><a href="">Estado del pedido</a></li>
+						<li><a href="">Ayuda para comprar</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu5()">
+					<div class="typeOptionTittle">
+						<p>Empresas</p><p>+</p>
+					</div>
+
+					<ul id="companyUl">
+						<li><a href="">Apple y las empresas</a></li>
+						<li><a href="">Compras de empresa</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu6()">
+					<div class="typeOptionTittle">
+						<p>Educación</p><p>+</p>
+					</div>
+
+					<ul id="educationUl">
+						<li><a href="">Apple en la educación</a></li>
+						<li><a href="">Compras para la universidad</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu7()">
+					<div class="typeOptionTittle">
+						<p>Salud</p><p>+</p>
+					</div>
+
+					<ul id="healthUl">
+						<li><a href="">Apple en el sector sanitario</a></li>
+						<li><a href="">Salud en en Apple Watch</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu8()">
+					<div class="typeOptionTittle">
+						<p>Valores de Apple</p><p>+</p>
+					</div>
+
+					<ul id="appleValuesUl">
+						<li><a href="">Accesibilidad</a></li>
+						<li><a href="">Medio ambiente</a></li>
+						<li><a href="">Privacidad</a></li>
+						<li><a href="">Responsabilidad de proveedores</a></li>
+					</ul>
+				</li>
+
+				<li class="typeOptionFooter" onclick="displayFooterMenu9()">
+					<div class="typeOptionTittle">
+						<p>Acerca de Apple</p><p>+</p>
+					</div>
+
+					<ul id="aboutUl">
+						<li><a href="">Newsroom</a></li>
+						<li><a href="">Directivos de Apple</a></li>
+						<li><a href="">Oportunidades laborales</a></li>
+						<li><a href="">Garantía</a></li>
+						<li><a href="">Inversores</a></li>
+						<li><a href="">Ética y conducta</a></li>
+						<li><a href="">Eventos</a></li>
+						<li><a href="">Creación de empleo en Europa</a></li>
+						<li><a href="">Contacto</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="moreContact">
+				<p>
+					Más formas de comprar: <a href=""> encuentra un Apple Store </a> o <a href=""> un distribuidor </a> cerca de ti. 
+					<p>O llama al 900 150 503.</p>
+				</p>
+			</div>
+		</div>
+
+		<div id="containerFooterBottom">
+			<div id="firstLine">
+				<div>
+					<p>España</p>
+				</div>
+				<div>
+					<p>
+						Copyright © 2022 Apple Inc. Todos los derechos reservados.
+					</p>
+				</div>
+			</div>
+
+			<div id="secondLine">
+				<div><a href="">Política de privacidad</a></div>
+				<div><a href="">Uso de cookies</a></div>
+				<div><a href="">Condiciones de uso</a></div>
+				<div><a href="">Ventas y reembolsos</a></div>
+				<div><a href="">Avisos legales</a></div>
+				<div><a href="">Mapa del sitio</a></div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jsApple.js"></script>
+
+</body>
+</html>
